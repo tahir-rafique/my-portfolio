@@ -1,176 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="shortcut icon" href="./assets/images/pic.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <!-- header design  -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <i class='bx bx-menu' id="menuicon"></i>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/navBar.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portifólio - Estefane Ribeio</title>
+  </head>
+  <body onload="ativar()">
+    <header>
+      <a href="#topo"
+        ><h1>
+          <span>&lt;</span> <span>estefane</span>
+          <div style="display: inline">Ribeiro</div>
+          <span>/&gt;</span>
+        </h1></a
+      >
+      <nav>
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <button class="mode"
+              ><img src="./assets/lua.png" alt="Modo dark" class="icon"
+            /></button>
+          </li>
+        </ul>
+      </nav>
+      <img src="./assets/menu-aberto.png" class="icon-menu" />
     </header>
+    <div id="topo"></div>
 
-    <section class="home" id="home">
-        <div class="homecontent">
-            <h3>Hello, It's Me</h3>
-            <h1>Tahir Rafique</h1>
-            <h3>I'm a <span class="multipletext"></span></h3>
-            <p>I am a passionate and innovative web developer on a mission to shape digital experiences that captivate and inspire. With a year of dedicated hands-on experience in the world of web development, I've cultivated a profound love for crafting pixel-perfect, user-centric websites.</p>
-            <div class="socialmedia">
-                <a href="https://www.facebook.com/profile.php?id=100091606890493"  target="_blank"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://github.com/FatimaNaeem4144" target="_blank"><i class='bx bxl-github'   ></i></a>
-                <a href="https://www.instagram.com/fatimanaeem4144/"><i class='bx bxl-instagram-alt'  target="_blank" ></i></a>
-                <a href="https://pk.linkedin.com/in/fatima-naeem-0b9bbb251?trk=people-guest_people_search-card"  target="_blank" ><i class='bx bxl-linkedin'  ></i></a>
-            </div>
-            <a href="./assets/images/cv.jpg" class="btn" target="_blank"> Download CV</a>
+    <a href="#topo"
+      ><div class="topo">
+        <img
+          src="./assets/angulo-da-seta-para-cima.png"
+          alt="Ir ao topo"
+        /></div
+    ></a>
+
+    <main>
+      <section id="home">
+        <p>
+          Olá, meu nome é <span>Estefane Ribeiro</span> e sou uma desenvolvedora
+        </p>
+        <span class="typing_animation">FullStack!!!</span>
+        <div class="resumo">
+          <a href="curriculo/Estefane-Ribeiro.pdf"
+          download=""
+          title="Baixar currículo"
+          id="curriculo">
+          Resumo</a>
         </div>
-            <div class="homeimg">
-<img src="./assets/images/MyProfile.png" alt="">
-            </div>
         
-    </section>
-    <!-- about section design  -->
-    <section class="about" id="about">
-        <div class="aboutimg">
-            <img src="./assets/images/MyProfile.png" alt="">
+      </section>
+      <section id="sobre">
+        <div class="perfil" data-aos="fade-right">
+          <img src="assets/estefane.png" alt="foto de Estefane Ribeiro" />
         </div>
-        <div class="aboutcontent">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer</h3>
-            <p>I am a dedicated front-end developer with a genuine passion for crafting exceptional websites that combine aesthetics and functionality. With a solid background in HTML, CSS, JavaScript.I have honed my skills over time to create captivating user interfaces that leave a lasting impression.</p>
-            <a href="#" class="btn">Read More</a>
+        <div class="sobre-mim" data-aos="fade-left">
+          <h2>Sobre mim</h2>
+          <p>
+            Meu nome é Estefane Ribeiro, sou estudante de Ciências da computação
+            e técnica em informática.
+          </p>
+          <p>
+            Minha primeira experiência com Desenvolvimento foi em 2016 por meio
+            do curso técnico e desde essa época gostei e me identifiquei muito
+            com a área.
+          </p>
+          <p>
+            Atualmente estudo mais focado no desenvolvimento front-end, porém
+            busco futuramente me tornar uma desenvolvedora full-stack.
+          </p>
+          <p>
+            Meu foco é aprender novas tecnologias e aprimorar ainda mais as
+            habilidades que possuo, para o desenvolvimento e eficiência de
+            sistemas e uma melhor experiência do usuário.
+          </p>
         </div>
-    </section>
-    <!-- services section design -->
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="servicescontainer">
-            <div class="servicesbox">
-                <i class='bx bx-code-alt'></i>
-                <h3>Front-End Development</h3>
-                <p>I bring a comprehensive front-end skill set to the table, with expertise in HTML, CSS, and JavaScript. My experience extends to crafting responsive and visually appealing interfaces that adapt seamlessly to various devices.I've successfully created dynamic and interactive web elements that enhance user engagement. </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="servicesbox">
-                <i class='bx bxs-paint' ></i>
-                <h3>Responsive Design</h3>
-                <p>Adept at creating websites that provide a consistent and optimal viewing experience across desktops, tablets, and mobile devices.Familiar with user-centered design principles, ensuring intuitive navigation and an aesthetically pleasing layout for enhanced user satisfaction.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+      </section>
+      <section id="habilidades">
+        <div class="about-sckill">
+          <h2>Habilidades</h2>
+          <p class="resumo"></p>
+        </div>
 
-            <div class="servicesbox">
-                <i class='bx bx-bar-chart-alt' ></i>
-                <h3>Problem Solving</h3>
-                <p>Strong analytical skills for identifying and resolving technical issues, ensuring smooth functionality and optimal performance.Effective at managing tasks and meeting deadlines in fast-paced environments, contributing to successful project deliveries</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+        <div class="sckills">
+          <div class="sckill">
+            <img src="./assets/html.png" alt="imagem html5" />
+          </div>
+          <div class="sckill">
+            <img src="./assets/css.png" alt="imagem css3" />
+          </div>
+          <div class="sckill">
+            <img src="./assets/js.png" alt="imagem javaScript" />
+          </div>
+          <div class="sckill">
+            <img src="./assets/react.png" alt="imagem react.js" />
+          </div>
+          <div class="sckill">
+            <img src="./assets/mysql.png" alt="imagem mysql" />
+          </div>
+          <div class="sckill">
+            <img src="./assets/bootstrap.png" alt="bootstrap" />
+          </div>
+          <div class="sckill">
+            <img src="./assets/node.png" alt="" />
+          </div>
         </div>
-    </section>
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <div class="portfoliocontainer">
-            <div class="portfoliobox">
-                <img src="./assets/images/foodweb.JPG" alt="">
-                <div class="portfoliolayer">
-                    <h4>Food Website</h4>
-                    <p>Welcome to our restaurant's website! It's like a well-prepared dish it looks and works great on any device.You'll find our menu easy to explore.</p>
-                    <a href="https://food-restaurant-websitee.netlify.app" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
+      </section>
+      <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projects">
+          <div class="project" data-aos="fade-right">
+            <div class="capa">
+              <img src="./assets/guiapress.png" alt="" />
+              <div class="background"></div>
             </div>
+            <div class="infors">
+              <div class="title">
+                <h3>
+                  <a
+                    href="https://github.com/estefane-ribeiro/blog"
+                    target="_blank"
+                  >
+                    Blog
+                  </a>
+                </h3>
+                <span>
+                  <!-- <a href=""><img src="./assets/abrir.png" alt="Abrir" /></a> -->
+                  <a
+                    href="https://github.com/estefane-ribeiro/blog"
+                    target="_blank"
+                    ><img
+                      src="./assets/github-dark.png"
+                      alt="github"
+                      width="20"
+                      height="20"
+                  /></a>
+                </span>
+              </div>
 
-            <div class="portfoliobox">
-                <img src="./assets/images/book.JPG" alt="">
-                <div class="portfoliolayer">
-                    <h4>Book Store </h4>
-                    <p>Dive into a diverse collection,ordering your next adventure from the comfort of your screen. Your next read is just a click away!</p>
-                    <a href="https://online-book-storee.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
+              <p>
+                Esse foi um sistema que eu desenvolvi no curso de formação
+                node.js. Trata-se de um blog, no qual os usuários podem se
+                cadastrar, postar e ler blogs.
+              </p>
+              <div class="tecs">
+                <span>Html * </span>
+                <span>css * </span>
+                <span>bootstrap * </span>
+                <span>js *</span>
+                <span>node.js * </span>
+                <span>Ejs* </span>
+                <span>Mysql *</span>
+                <span>Sequelize</span>
+              </div>
             </div>
-            <div class="portfoliobox">
-                <img src="./assets/images/pana.JPG" alt="">
-                <div class="portfoliolayer">
-                    <h4>PanaCLoud Website</h4>
-                    <p> Welcome to Panacloud where possibilities unfold.</p>
-                    <a href="https://pana-cloud-web.netlify.app" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
+          </div>
+          <div class="project" data-aos="fade-top">
+            <div class="capa">
+              <img src="./assets/perguntas-anonimas.png" alt="" />
+              <div class="background"></div>
             </div>
-            <div class="portfoliobox">
-                <img src="./assets/images/portfolio.JPG" alt="">
-                <div class="portfoliolayer">
-                    <h4>My Portfolio</h4>
-                    <p>Welcome to my portfolio, a testament to my commitment to innovation and creativity.</p>
-                    <a href="https://myy-portfoliyo.netlify.app" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
+            <div class="infors">
+              <div class="title">
+                <h3>
+                  <a
+                    href="https://github.com/estefane-ribeiro/GuiaPergunta"
+                    target="_blank"
+                  >
+                    Guia pergunta
+                  </a>
+                </h3>
+                <span>
+                  <!-- <img src="./assets/abrir.png" alt="Abrir" /> -->
+                  <a
+                    href="https://github.com/estefane-ribeiro/GuiaPergunta"
+                    target="_blank"
+                    ><img
+                      src="./assets/github-dark.png"
+                      alt="github"
+                      width="20"
+                      height="20"
+                  /></a>
+                </span>
+              </div>
+
+              <p>
+                Esse foi um sistema que eu desenvolvi no curso formação node.js.
+                É um sistemas de perguntas e respostas anônimas.
+              </p>
+              <div class="tecs">
+                <span>Html * </span>
+                <span>css * </span>
+                <span>bootstrap * </span>
+                <span>js *</span>
+                <span>node.js * </span>
+                <span>Ejs* </span>
+                <span>Mysql *</span>
+                <span>Sequelize</span>
+              </div>
             </div>
-            <div class="portfoliobox">
-                <img src="./assets/images/pepsi.JPG" alt="">
-                <div class="portfoliolayer">
-                    <h4>Pepsi Website</h4>
-                    <p>Discover the world of Pepsi on our website a refreshing digital experience that mirrors the excitement of our brand.</p>
-                    <a href="https://pepsiwebsite1.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
+          </div>
+          <div class="project" data-aos="fade-left">
+            <div class="capa">
+              <img src="./assets/sio.png" alt="" />
+              <div class="background"></div>
             </div>
-            <div class="portfoliobox">
-                <img src="./assets/images/assign.JPG" alt="">
-                <div class="portfoliolayer">
-                    <h4>Portfolio</h4>
-                    <p>Welcome to my portfolio, a testament to my commitment to innovation and creativity.</p>
-                    <a href="https://assignment-portfolioo.netlify.app/" target="_blank"><i class='bx bx-link-external' ></i></a>
-                </div>
+            <div class="infors">
+              <div class="title">
+                <h3>
+                  <a
+                    href="https://estefane-ribeiro.github.io/ladding-page-sio/"
+                    target="_blank"
+                    >
+                    Ladding page sio
+                  </a>
+                </h3>
+                <span>
+                  <a
+                    href="https://estefane-ribeiro.github.io/ladding-page-sio/"
+                    target="_blank"
+                    ><img src="./assets/abrir.png" alt="Abrir"
+                  /></a>
+                  <a
+                    href="https://github.com/estefane-ribeiro/ladding-page-sio"
+                    target="_blank"
+                    ><img
+                      src="./assets/github-dark.png"
+                      alt="github"
+                      width="20"
+                      height="20"
+                  /></a>
+                </span>
+              </div>
+
+              <p>
+                Esse foi uma ladding page que eu criei para treinar minhas
+                habilidades html, css e js.
+              </p>
+              <div class="tecs">
+                <span>Html * </span>
+                <span>css * </span>
+                <span>js</span>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
-            <div class="inputbox">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div class="inputbox">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-    <!-- footer design section -->
-    <footer class="footer">
-        <div class="footertext">
-            <p>Copyright &copy; 2023 by Codehal. All Rights Reserved.</p>
+      </section>
+      <section id="contato">
+        <h2 data-aos="fade-right">Entre em contato comigo</h2>
+        <p data-aos="fade-left">
+          Entre em contato caso tenha alguma dúvida ou tenha alguma pergunta ou
+          simplesmente para dizer, olá, ficarei feliz em responder.
+        </p>
+        <a href="mailto:estefaneribeiroveras@gmail.com" >Diga, olá.</a>
+        <div class="social">
+          <a href="https://github.com/estefane-ribeiro" target="_blank"
+            ><img
+              src="./assets/github.png"
+              alt="GitHub"
+              title="Me visite no Github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/estefane-ribeiro-410a1822a/"
+            target="_blank"
+            title="Me visite no Linkedin"
+            ><img src="./assets/linkedin.png" alt="Linkedin" 
+          /></a>
+          <a
+            href="https://www.instagram.com/_estefane_veras/"
+            target="_blank"
+            title="Me visite no Instagram"
+            ><img src="./assets/instagram.png" alt="Instagram"
+          /></a>
+          <div class="barra"></div>
         </div>
-        <div class="footericontop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#topo"
+        >&copy; &lt; <span>estefane</span>
+        <div style="display: inline">Ribeiro</div>
+        /&gt;</a
+      >
     </footer>
 
-
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-<!-- typed js  -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- custom js -->
-    <script src="script.js"></script>
-
-    
-</body>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600
+      })
+    </script>
+  </body>
 </html>
