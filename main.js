@@ -37,17 +37,17 @@ mode.addEventListener('click', () => {
 
 
 
-// dark / linght
-// mode.addEventListener('click', () => {
-//   const color = body.classList.contains('dark-mode') ? 'dark-mode' : 'linght'
-//   if (body.classList.contains('dark-mode')) {
-//     body.classList.remove('dark-mode')
-//     icon.src = './assets/lua.png'
-//   } else {
-//     body.classList.add('dark-mode')
-//     icon.src = './assets/sol.png'
-//   }
-// })
+dark / linght
+mode.addEventListener('click', () => {
+  const color = body.classList.contains('dark-mode') ? 'dark-mode' : 'linght'
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode')
+    icon.src = './assets/lua.png'
+  } else {
+    body.classList.add('dark-mode')
+    icon.src = './assets/sol.png'
+  }
+})
 
 // subir ao topo
 document.addEventListener('scroll', () => {
